@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--Home Ctrl-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeCtrl" customModule="corujaVirtual" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIB-Xi-5Bx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="366" y="272" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ttY-e5-pSv" userLabel="player-controller-container-view">
+                                <rect key="frame" x="125" y="300" width="436" height="45"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player-control-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="F6W-al-D3c">
+                                        <rect key="frame" x="0.0" y="2" width="436" height="43"/>
+                                        <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="182" y="325" width="436" height="43"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player-control-progress-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="qkc-rK-6U1">
+                                        <rect key="frame" x="51" y="19" width="334" height="8"/>
+                                        <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="233" y="343" width="334" height="8"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player-control-progress-indicator.png" translatesAutoresizingMaskIntoConstraints="NO" id="DsZ-xh-BBD" userLabel="player_ctrl_prog_indicatior">
+                                        <rect key="frame" x="47" y="10" width="23" height="25"/>
+                                        <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="225" y="336" width="23" height="22"/>
+                                        </variation>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zac-Rb-qem" userLabel="player_ctrl_stop">
+                                        <rect key="frame" x="22" y="18" width="11" height="12"/>
+                                        <state key="normal" title="Button" image="player-control-stop.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99X-mt-1kV" userLabel="player-ctrl-play">
+                                        <rect key="frame" x="24" y="19" width="11" height="12"/>
+                                        <state key="normal" title="Button" image="player-control-play.png"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66082969721774165" green="0.97074693494064968" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="YIB-Xi-5Bx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="YIB-Xi-5Bx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="player_ctrl_container" destination="ttY-e5-pSv" id="PMF-LC-LH7"/>
+                        <outlet property="player_ctrl_play" destination="99X-mt-1kV" id="gPe-SV-vMl"/>
+                        <outlet property="player_ctrl_prog_container" destination="qkc-rK-6U1" id="TXX-FP-E7l"/>
+                        <outlet property="player_ctrl_prog_indicator" destination="DsZ-xh-BBD" id="n7j-xX-Le6"/>
+                        <outlet property="player_ctrl_stop" destination="zac-Rb-qem" id="1ps-pG-3zA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="247"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="player-control-bg.png" width="438" height="45"/>
+        <image name="player-control-play.png" width="11" height="13"/>
+        <image name="player-control-progress-bg.png" width="334" height="8"/>
+        <image name="player-control-progress-indicator.png" width="23" height="22"/>
+        <image name="player-control-stop.png" width="11" height="12"/>
+    </resources>
+</document>
