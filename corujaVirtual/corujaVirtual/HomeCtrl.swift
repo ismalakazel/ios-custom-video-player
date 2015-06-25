@@ -7,10 +7,7 @@
 //
 
 import UIKit
-import MediaPlayer
 import AVFoundation
-import CoreMedia
-import AVKit
 
 class HomeCtrl: UIViewController, UIGestureRecognizerDelegate {
     
