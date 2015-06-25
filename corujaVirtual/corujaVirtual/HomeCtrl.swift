@@ -41,7 +41,7 @@ class HomeCtrl: UIViewController, UIGestureRecognizerDelegate {
     
     func playerInit()
     {
-        self.playerAsset = AVAsset(URL: NSURL(string: "http://s3.amazonaws.com/vids4project/sample.mp4")!)
+        self.playerAsset = AVAsset(URL: NSURL(string: "https://github.com/ismalakazel/ios-custom-video-player/raw/master/assets/sample.mp4")!)
         self.playerItem = AVPlayerItem(asset: self.playerAsset!)
         self.player = AVPlayer(playerItem: self.playerItem!)
         self.avLayer = AVPlayerLayer(player: self.player)
