@@ -2,6 +2,7 @@
 
 The purpose of this project was to explore following technologies:
   
+  - XCode 7 Beta
   - AVFoundation
   - AVPlayer
   - Custom player controls
@@ -11,9 +12,17 @@ __Project structure:__
   down to check the preview image of the video player.
   - `corujaVirtual/` folder that contains the project files. You should open this folder in xcode.
 
+__Configuration:__
+  - XCode 7 Beta
+  - iPhone simulator 6. At the moment the layout is not flexible to support other iPhones
+
 __Player controls:__
   - Play and pause video
   - Seek to time
+  
+__TODO:__
+  - Volume control
+  - Add tests
 
 __Final result preview:__
   
