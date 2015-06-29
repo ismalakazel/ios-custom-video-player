@@ -14,7 +14,6 @@ __Project structure:__
 
 __Configuration:__
   - XCode 7 Beta
-  - iPhone simulator 6. At the moment the layout is not flexible to support other iPhones
 
 __Player controls:__
   - Play and pause video
