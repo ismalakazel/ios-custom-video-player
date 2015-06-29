@@ -32,4 +32,10 @@ class corujaVirtualUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testPauseVideo() {
+        let button = XCUIApplication().windows.childrenMatchingType(.Unknown).elementAtIndex(0).childrenMatchingType(.Unknown).elementAtIndex(1).childrenMatchingType(.Button).matchingIdentifier("Button").elementAtIndex(0)
+        button.tap()
+        
+    }
+    
 }
